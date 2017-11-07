@@ -4104,9 +4104,9 @@
      */
     
     editormd.loadCSS   = function(fileName, callback, into) {
-        into       = into     || "head";        
+        into       = into     || "head";
         callback   = callback || function() {};
-        
+
         var css    = document.createElement("link");
         css.type   = "text/css";
         css.rel    = "stylesheet";
@@ -4137,9 +4137,7 @@
      */
 
     editormd.loadScript = function(fileName, callback, into) {
-        if(fileName == '../lib/../plugins/image-dialog/image-dialog'){
-            fileName = '../lib/editor.md/plugins/image-dialog/image-dialog';
-        }
+
         into          = into     || "head";
         callback      = callback || function() {};
         
